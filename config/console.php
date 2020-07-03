@@ -35,6 +35,17 @@ $config = [
         ],
     ],
     */
+    'controllerMap' => [
+        // ...
+        'migrate' => [
+            'class' => 'yii\console\controllers\MigrateController',
+            'migrationPath' => null,
+            'migrationNamespaces' => [
+                // ...
+                'conquer\oauth2\migrations',
+            ],
+        ],
+    ],
 ];
 
 if (YII_ENV_DEV) {
